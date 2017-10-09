@@ -1,4 +1,4 @@
-.jar
+*.jar
 */target/
 */out/
 .settings
