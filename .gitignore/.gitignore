@@ -9,3 +9,5 @@
 */test-output
 */.cache-tests
 .jar
+*/.idea
+*/target
