@@ -1,8 +1,7 @@
 .jar
-target/
-out
+*/target/
+*/out/
 .settings
 .classpath
 .project
-out
-test-output
+
