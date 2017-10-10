@@ -58,14 +58,14 @@ public class MRTest {
         values.add(new Text(cat));
         values.add(new Text(dog));
         reduceDriver.withInput(new IntWritable(-3), values);
-        reduceDriver.withOutput(new IntWritable(3), new Text("cat; dog;"));
+        reduceDriver.withOutput(new IntWritable(3), new Text("cat; dog; "));
         reduceDriver.runTest();
         }
 
     @Test
     public void testMapReduce() throws IOException {
         mapReduceDriver.withInput(new LongWritable(), new Text("cat dog"));
-        mapReduceDriver.withOutput(new IntWritable(3), new Text("cat; dog;"));
+        mapReduceDriver.withOutput(new IntWritable(3), new Text("cat; dog; "));
         mapReduceDriver.runTest();
         }
         }

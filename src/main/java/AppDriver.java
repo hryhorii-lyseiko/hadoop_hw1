@@ -38,6 +38,8 @@ public class AppDriver   extends Configured implements Tool {
         job.setInputFormatClass(TextInputFormat.class);
         job.setOutputFormatClass(TextOutputFormat.class);
 
+        job.setNumReduceTasks(1);
+
         job.setMapperClass(LWMapper.class);
         job.setCombinerClass(LWCombiner.class);
         job.setReducerClass(LWReducer.class);

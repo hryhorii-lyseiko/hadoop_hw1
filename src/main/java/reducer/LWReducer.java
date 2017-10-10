@@ -31,7 +31,7 @@ public class LWReducer extends Reducer<IntWritable, Text, IntWritable, Text> {
                 sb.append(words.toString()).append("; ");
             }
 
-            sb.setLength(sb.length() - 1);
+            //sb.setLength(sb.length() - 1);
 
             context.write(new IntWritable(-1 * key.get()), new Text(sb.toString()));
         }
